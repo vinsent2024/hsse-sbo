@@ -1,0 +1,110 @@
+@use "../abstract/variable" as var;
+@use "../abstract/functions" as func;
+@use "../abstract/mixins" as mixins;
+
+.header {
+  padding: 1rem 20rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #eee;
+
+  @include mixins.responsive(xs) {
+    padding: 1rem 2rem;
+  }
+
+  @include mixins.responsive(sm) {
+    padding: 1rem 2rem;
+  }
+
+  @include mixins.responsive(md) {
+    padding: 1rem 2rem;
+  }
+
+  @include mixins.responsive(lg) {
+    padding: 1rem 6rem;
+  }
+
+  @include mixins.responsive(xlg) {
+    padding: 1rem 15rem;
+  }
+
+  @include mixins.responsive(xxlg) {
+    padding: 1rem 20rem;
+  }
+
+  h2 > span {
+    @include mixins.responsive(xs) {
+      // display: none;
+      font-size: 1rem;
+    }
+  }
+
+  .nav-toggler {
+    display: none;
+
+    @include mixins.responsive(xs) {
+      display: block;
+      font-size: 1.3rem;
+    }
+
+    @include mixins.responsive(sm) {
+      display: block;
+      font-size: 1.3rem;
+    }
+
+    @include mixins.responsive(lg) {
+      display: none;
+    }
+  }
+
+  &--menu {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    text-transform: uppercase;
+
+    @include mixins.responsive(xs) {
+      display: none;
+
+      @include mixins.mobile-menu;
+    }
+
+    @include mixins.responsive(sm, "sm-md") {
+      display: none;
+
+      @include mixins.mobile-menu;
+    }
+
+    @include mixins.responsive(lg) {
+      display: flex;
+    }
+
+    &__item > a {
+      margin-right: 1.5rem;
+      font-size: 14px;
+      font-weight: 600;
+      color: #242424;
+      transition: 200ms;
+
+      &:hover {
+        color: func.theme-colors();
+      }
+
+      &.active {
+        color: func.theme-colors();
+      }
+    }
+  }
+
+  &.navbar-fixed {
+    position: fixed;
+    top: -1px;
+    left: 0;
+    right: 0;
+    width: 100%;
+    background-color: #fff;
+    box-shadow: 1px 1px 2px 0 #e6e6e6;
+    z-index: 999;
+  }
+}

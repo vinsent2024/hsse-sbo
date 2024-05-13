@@ -1,0 +1,109 @@
+@use "../abstract/variable" as var;
+@use "../abstract/functions" as func;
+@use "../abstract/mixins" as mixins;
+
+.about-area {
+  padding: 8rem 20rem;
+  background-color: func.theme-colors();
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 11rem;
+
+  @include mixins.responsive(xs) {
+    padding: 4rem 2rem;
+    flex-direction: column;
+    margin-top: 0;
+  }
+
+  @include mixins.responsive(sm) {
+    padding: 4rem 2rem;
+    flex-direction: column;
+    margin-top: 0;
+    // align-items: initial;
+  }
+
+  @include mixins.responsive(lg) {
+    padding: 8rem 6rem;
+    flex-direction: row;
+    margin-top: 0;
+    align-items: center;
+  }
+
+  @include mixins.responsive(xlg) {
+    padding: 8rem 15rem;
+  }
+
+  @include mixins.responsive(xxlg) {
+    padding: 8rem 20rem;
+  }
+
+  &--img {
+    width: 32rem;
+
+    @include mixins.responsive(sm) {
+      width: 20rem;
+    }
+
+    @include mixins.responsive(lg) {
+      width: 64rem;
+    }
+
+    @include mixins.responsive(xlg) {
+      width: 100rem;
+    }
+  }
+
+  &--contents {
+    color: #fff;
+
+    @include mixins.responsive(xs) {
+      margin: 0;
+    }
+
+    @include mixins.responsive(sm) {
+      margin: 0;
+    }
+
+    h2 {
+      font-size: 3rem;
+
+      @include mixins.responsive(xs) {
+        font-size: 1.5rem;
+      }
+
+      @include mixins.responsive(sm) {
+        font-size: 1.5rem;
+      }
+
+      @include mixins.responsive(xxlg) {
+        font-size: 3rem;
+      }
+    }
+
+    p {
+      line-height: 2;
+      color: #cfcfcf;
+
+      @include mixins.responsive(xs) {
+        font-size: 0.9rem;
+      }
+
+      @include mixins.responsive(sm) {
+        font-size: 0.9rem;
+      }
+
+      @include mixins.responsive(xxlg) {
+        font-size: 1rem;
+      }
+
+      a {
+        color: #fff;
+
+        &:hover {
+          text-shadow: 10px 20px 30px black;
+        }
+      }
+    }
+  }
+}

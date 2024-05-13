@@ -1,0 +1,88 @@
+@use "../abstract/mixins" as mixins;
+
+.contact {
+  padding: 8rem 20rem;
+  background-color: rgb(224, 224, 224);
+
+  @include mixins.responsive(xs) {
+    padding: 4rem 2rem;
+  }
+
+  @include mixins.responsive(sm) {
+    padding: 4rem 2rem;
+  }
+
+  @include mixins.responsive(lg) {
+    padding: 8rem 6rem;
+  }
+
+  @include mixins.responsive(xxlg) {
+    padding: 8rem 20rem;
+  }
+
+  &-card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    padding: 2rem 3rem;
+    border-radius: 0.5rem;
+
+    @include mixins.responsive(xs) {
+      flex-direction: column;
+      padding: 2rem;
+      align-items: initial;
+    }
+
+    @include mixins.responsive(sm) {
+      flex-direction: column;
+      padding: 2rem;
+      align-items: initial;
+    }
+
+    @include mixins.responsive(lg) {
+      flex-direction: row;
+    }
+
+    img {
+      @include mixins.responsive(lg) {
+        width: 30rem;
+      }
+    }
+
+    &--contents {
+      flex-grow: 1;
+
+      h4 {
+        font-size: 1.2rem;
+
+        @include mixins.responsive(xs) {
+          font-size: 1rem;
+        }
+
+        @include mixins.responsive(sm) {
+          font-size: 1rem;
+        }
+
+        @include mixins.responsive(xxlg) {
+          font-size: 1.2rem;
+        }
+      }
+
+      p {
+        color: gray;
+        @include mixins.responsive(xs) {
+          font-size: 0.9rem;
+        }
+
+        @include mixins.responsive(sm) {
+          font-size: 0.9rem;
+        }
+
+        @include mixins.responsive(xxlg) {
+          font-size: 1rem;
+        }
+      }
+    }
+  }
+}
