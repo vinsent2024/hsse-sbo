@@ -233,25 +233,29 @@
         <!-- ========== Start Contact ========== -->
         <section id="contact" class="contact">
             <div class="contact-card">
-                <form class="contact-card--contents space-y-1" action="#" method="POST">
+                <form id="contact-form" class="contact-card--contents space-y-1" action="https://api.web3forms.com/submit" method="POST">
                     <div class="contact-card--header mb-2">
                         <h4>Send us a Message</h4>
                         <p>Share your info briefly as possible</p>
                     </div>
                     <div>
-                        <input type="text" name="name" placeholder="Your name" class="form-control" required>
+                        <input type="hidden" name="access_key" value="fe927dee-90e8-4411-8e2e-743cee9defe4">
+                        <input type="text" id="name"  name="name" placeholder="Your name" class="form-control" required>
                     </div>
                     <div>
-                        <input type="email" name="email" placeholder="Your Email" class="form-control" required>
+                        <input type="email" id="email" name="email" placeholder="Your Email" class="form-control" required>
                     </div>
                     <div>
-                        <textarea class="form-control resize-none" placeholder="Share your message in detail" rows="10"
+                        <textarea class="form-control resize-none" id="message" name="message" placeholder="Share your message in detail" rows="10"
                             required></textarea>
                     </div>
                     <div>
-                        <button class="btn-primary">Send</button>
+                        <button type="submit" class="btn-primary" name="sendbutton">Send</button>
                     </div>
                 </form>
+
+               
+
                 <div>
                     <img src="./assets/img/cyberdude-contact.png" alt="Contact" class="img-responsive">
                 </div>
