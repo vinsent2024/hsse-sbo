@@ -1475,9 +1475,9 @@ footer .legal {
   text-align: center;
   max-width: 350px;
   cursor: pointer;
-  filter: grayscale(100%);
   margin-left: 3rem;
 }
+
 @media only screen and (min-width: 992px) {
   .roadmap--item {
     max-width: 600px;
@@ -1487,6 +1487,8 @@ footer .legal {
 .roadmap--item:hover .roadmap--item__img::after {
   animation: rotate-infinite 4000ms linear infinite;
 }
+
+
 .roadmap--item__img {
   position: relative;
   width: 100px;
@@ -1498,6 +1500,7 @@ footer .legal {
   margin-top: 10px;
 
 }
+
 .roadmap--item__img::after {
   position: absolute;
   top: 0;
