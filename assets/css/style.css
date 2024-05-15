@@ -27,7 +27,7 @@ a {
 }
 
 .line {
-  width: 6rem;
+  width: 15rem;
   height: 0.5rem;
   border-radius: 6px;
   margin: 30px auto;
@@ -504,13 +504,13 @@ footer .legal {
 
 @keyframes color-change {
   0% {
-    color: rgb(236, 255, 67);
+    color: #e44dd7;
   }
   50% {
-    color: rgb(255, 80, 67);
+    color: #9e27ff;
   }
   100% {
-    color: rgb(61, 80, 255);
+    color: #4DC7E4;
   }
 }
 @keyframes box-shape {
