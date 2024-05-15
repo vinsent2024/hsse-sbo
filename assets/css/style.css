@@ -34,6 +34,14 @@ a {
   background: linear-gradient(to right, #4DC7E4, #d42d9c);
 }
 
+.line1 {
+  width: 15rem;
+  height: 0.5rem;
+  border-radius: 6px;
+ 
+  background: linear-gradient(to right, #5900ff, #ff0095);
+}
+
 .img-responsive {
   max-width: 100%;
   height: auto;
