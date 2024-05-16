@@ -1739,7 +1739,7 @@ footer .legal {
   overflow: hidden;
 
 }
-@media only screen and (min-width: 1000px) {
+@media only screen and (min-width: 992px) {
   .courses-card {
     max-width: 280px;
   }
