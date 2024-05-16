@@ -512,10 +512,10 @@ footer .legal {
 
 @keyframes color-change {
   0% {
-    color: #e44dd7;
+    color: #5900ff;
   }
   50% {
-    color: #9e27ff;
+    color: #ff0095;
   }
   100% {
     color: #4DC7E4;
