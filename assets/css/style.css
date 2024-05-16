@@ -1550,12 +1550,12 @@ footer .legal {
 }
 @media only screen and (min-width: 992px) {
   .roadmap--item__contents p {
-    font-size: 0.9rem;
+    font-size: 0.8rem;
   }
 }
 @media only screen and (min-width: 1400px) {
   .roadmap--item__contents p {
-    font-size: 1rem;
+    font-size: 0.9rem;
   }
 }
 .roadmap--item:not(:last-child)::before {
