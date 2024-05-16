@@ -1377,6 +1377,14 @@ footer .legal {
 .about-area--contents h2 {
   font-size: 3rem;
 }
+.about-area--contents h2:hover {
+  background: linear-gradient(to right, #5900ff, #d42d9c); /* Define your gradient colors */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+  
+}
 @media only screen and (max-width: 576px) {
   .about-area--contents h2 {
     font-size: 1.5rem;
