@@ -1729,6 +1729,7 @@ footer .legal {
   max-width: 380px;
   border-radius: 10px;
   overflow: hidden;
+  box-shadow: 10px 10px 20px 0px rgba(54, 54, 54, 0.5);
 }
 @media only screen and (min-width: 992px) {
   .courses-card {
@@ -1807,7 +1808,10 @@ footer .legal {
   color: rgba(0, 0, 0, 0.938);
 }
 .courses-card:hover {
-  box-shadow: 2px 2px 20px 5px rgba(54, 54, 54, 0.5);
+  box-shadow: 0px 0px 0px 0px rgba(54, 54, 54, 0.5);
+}
+.courses-card a:hover {
+  color: #4DC7E4;
 }
 .courses--info {
   text-align: center;
