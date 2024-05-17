@@ -1678,15 +1678,23 @@ footer .legal {
   text-align: center;
 }
 
+.search-container {
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 15px;
+}
+
+
 .searchtxt{
+  margin-top: 50px;
   font-size: smaller;
   color: #fff;
-  margin-left: 20px;
-  margin-bottom: 10px;
+ text-align: center;
  
 }
 
 .search-box {
+
   font-size: 16px; /* Customize as needed */
   border: solid 2px #ffffff; /* Customize as needed */
   display: inline-block;
@@ -1694,7 +1702,6 @@ footer .legal {
   border-radius: 40px; /* Customize as needed */
   text-align: center;
   background-color: transparent;
-  margin-left: 20px;
   box-shadow: 5px 5px 10px 0px rgba(54, 54, 54, 0.5);
 }
 
@@ -1717,8 +1724,7 @@ footer .legal {
   display: none;
   color: rgb(255, 255, 255); /* Change the color to red */
   text-align: center; /* Center the text horizontally */
-  margin-top: 50px;
-
+  font-size: smaller;
 }
 
 .search-box input[type="text"]:focus {
@@ -1729,7 +1735,7 @@ footer .legal {
 .search-box input[type="text"]:focus,
 .search-box input[type="text"]:not(:placeholder-shown) {
  
-  width: 200px; /* Customize as needed */
+  width: 300px; /* Customize as needed */
   transition: width 0.3s cubic-bezier(0.68, -0.55, 0.27, 1.55);
 
 }
