@@ -1684,16 +1684,18 @@ footer .legal {
 
 .search-box {
   font-size: 16px; /* Customize as needed */
-  border: solid 2px #000000; /* Customize as needed */
+  border: solid 2px #ffffff; /* Customize as needed */
   display: inline-block;
   position: relative;
   border-radius: 40px; /* Customize as needed */
   text-align: center;
   background-color: transparent;
   margin-left: 20px;
+  box-shadow: 5px 5px 10px 0px rgba(54, 54, 54, 0.5);
 }
 
 .search-box input[type="text"] {
+  background-color: transparent;
   width: 40px; /* Customize as needed */
   height: 40px; /* Customize as needed */
   padding: 10px; /* Customize as needed */
@@ -1703,12 +1705,18 @@ footer .legal {
   transition: width 0.3s cubic-bezier(0.68, -0.55, 0.27, 1.55) 0.2s;
 }
 
+#search-input::placeholder {
+  color: #ffffff7c; /* Change this to your desired color */
+}
+
 .search-box input[type="text"]:focus {
   outline: none;
+  color: #fff;
 }
 
 .search-box input[type="text"]:focus,
 .search-box input[type="text"]:not(:placeholder-shown) {
+ 
   width: 200px; /* Customize as needed */
   transition: width 0.3s cubic-bezier(0.68, -0.55, 0.27, 1.55);
 
@@ -1729,12 +1737,13 @@ footer .legal {
   right: 15px; /* Adjust position as needed */
   transform: rotate(-45deg) translateY(35px); /* Adjust position as needed */
   transition: transform 0.2s ease-out 0.2s;
+  box-shadow: 5px 5px 10px 0px rgba(54, 54, 54, 0.5);
 }
 
 .search-box button[type="reset"]:before,
 .search-box button[type="reset"]:after {
   content: "";
-  background-color: #000000; /* Customize as needed */
+  background-color: #ffffff; /* Customize as needed */
   width: 2px; /* Customize as needed */
   height: 10px; /* Customize as needed */
   position: absolute;
