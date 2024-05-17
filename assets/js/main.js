@@ -69,34 +69,30 @@ onMenuClick();
 
 document.addEventListener("DOMContentLoaded", function() {
   const searchInput = document.getElementById("search-input");
+  const noResults = document.getElementById("no-results");
+  const searchQuerySpan = document.getElementById("search-query");
 
   // Event listener for search input
   searchInput.addEventListener("input", function() {
       const query = searchInput.value.toLowerCase();
       const forms = document.querySelectorAll(".courses-card");
+      let found = false;
 
       forms.forEach(form => {
           const title = form.querySelector('h4').textContent.toLowerCase();
           if (title.includes(query)) {
               form.style.display = "";
+              found = true;
           } else {
               form.style.display = "none";
           }
       });
-  });
-});
 
-// Function to sort forms
-function sortForms(criteria) {
-  const formsContainer = document.getElementById("forms-container");
-  const forms = Array.from(formsContainer.getElementsByClassName("courses-card"));
-
-  forms.sort((a, b) => {
-      if (criteria === 'title') {
-          return a.querySelector('h4').textContent.localeCompare(b.querySelector('h4').textContent);
+      if (!found && query !== "") {
+          searchQuerySpan.textContent = query;
+          noResults.style.display = "block";
+      } else {
+          noResults.style.display = "none";
       }
   });
-
-  // Append sorted forms back to the container
-  forms.forEach(form => formsContainer.appendChild(form));
-}
+});
