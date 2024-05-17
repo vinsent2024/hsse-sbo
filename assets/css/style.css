@@ -1679,6 +1679,7 @@ footer .legal {
   font-size: smaller;
   color: #fff;
   margin-left: 20px;
+  margin-bottom: 10px;
  
 }
 
@@ -1707,6 +1708,14 @@ footer .legal {
 
 #search-input::placeholder {
   color: #ffffff7c; /* Change this to your desired color */
+}
+
+.result {
+  display: none;
+  color: rgb(255, 255, 255); /* Change the color to red */
+  text-align: center; /* Center the text horizontally */
+  margin-top: 50px;
+
 }
 
 .search-box input[type="text"]:focus {
