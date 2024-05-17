@@ -522,7 +522,6 @@ footer .legal {
   width: 100%; /* Full width */
   height: 100%; /* Full height */
   overflow: auto; /* Enable scroll if needed */
-
   background-color: #00000086; /* Black w/ opacity */
 }
 
@@ -530,7 +529,8 @@ footer .legal {
   background-color: #fefefe;
   margin: 15% auto; /* 15% from the top and centered */
   padding: 20px;
-  border: 1px solid #888;
+  border: 3px solid #4DC7E4;
+  border-radius: 20px;
   width: 80%; /* Could be more or less, depending on screen size */
 }
 
