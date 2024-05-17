@@ -1674,6 +1674,73 @@ footer .legal {
 .courses--heading {
   text-align: center;
 }
+
+
+.search-box {
+  font-size: 16px; /* Customize as needed */
+  border: solid 2px #000000; /* Customize as needed */
+  display: inline-block;
+  position: relative;
+  border-radius: 40px; /* Customize as needed */
+  text-align: center;
+  background-color: transparent;
+}
+
+.search-box input[type="text"] {
+  width: 40px; /* Customize as needed */
+  height: 40px; /* Customize as needed */
+  padding: 10px; /* Customize as needed */
+  border: none;
+  box-sizing: border-box;
+  border-radius: 40px; /* Customize as needed */
+  transition: width 0.3s cubic-bezier(0.68, -0.55, 0.27, 1.55) 0.2s;
+}
+
+.search-box input[type="text"]:focus {
+  outline: none;
+}
+
+.search-box input[type="text"]:focus,
+.search-box input[type="text"]:not(:placeholder-shown) {
+  width: 200px; /* Customize as needed */
+  transition: width 0.3s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+
+}
+
+.search-box button[type="reset"] {
+  background-color: transparent;
+  width: 10px; /* Customize as needed */
+  height: 10px; /* Customize as needed */
+  border: 0;
+  padding: 0;
+  outline: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 15px; /* Adjust position as needed */
+  right: 15px; /* Adjust position as needed */
+  transform: rotate(-45deg) translateY(35px); /* Adjust position as needed */
+  transition: transform 0.2s ease-out 0.2s;
+}
+
+.search-box button[type="reset"]:before,
+.search-box button[type="reset"]:after {
+  content: "";
+  background-color: #000000; /* Customize as needed */
+  width: 2px; /* Customize as needed */
+  height: 10px; /* Customize as needed */
+  position: absolute;
+}
+
+.search-box button[type="reset"]:after {
+  transform: rotate(90deg);
+  opacity: 0;
+  transition: transform 0.2s ease-out, opacity 0.2s ease-out;
+}
+
+
+
 .courses--heading h2 {
   font-size: 2rem;
   color: #fff;
