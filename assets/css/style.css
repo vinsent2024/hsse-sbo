@@ -503,7 +503,7 @@ footer .social-icons > a > i {
   color: #ffffff;
 }
 footer .social-icons > a > i:hover {
-  background:radial-gradient(circle, #5900ff, #ff0095);
+  background:linear-gradient(to right, #5900ff, #ff0095);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
