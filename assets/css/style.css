@@ -1675,6 +1675,12 @@ footer .legal {
   text-align: center;
 }
 
+.searchtxt{
+  font-size: smaller;
+  color: #fff;
+  margin-left: 20px;
+ 
+}
 
 .search-box {
   font-size: 16px; /* Customize as needed */
@@ -1684,6 +1690,7 @@ footer .legal {
   border-radius: 40px; /* Customize as needed */
   text-align: center;
   background-color: transparent;
+  margin-left: 20px;
 }
 
 .search-box input[type="text"] {
