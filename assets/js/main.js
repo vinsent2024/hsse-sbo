@@ -64,3 +64,41 @@ function onMenuClick() {
 navbarFixed();
 setMenuActive();
 onMenuClick();  
+
+
+
+document.addEventListener("DOMContentLoaded", function() {
+  const searchInput = document.getElementById("search-input");
+
+  // Event listener for search input
+  searchInput.addEventListener("input", function() {
+      const query = searchInput.value.toLowerCase();
+      const forms = document.querySelectorAll(".courses-card");
+
+      forms.forEach(form => {
+          const title = form.dataset.title.toLowerCase();
+          if (title.includes(query)) {
+              form.style.display = "";
+          } else {
+              form.style.display = "none";
+          }
+      });
+  });
+});
+
+// Function to sort forms
+function sortForms(criteria) {
+  const formsContainer = document.getElementById("forms-container");
+  const forms = Array.from(formsContainer.getElementsByClassName("courses-card"));
+
+  forms.sort((a, b) => {
+      if (criteria === 'title') {
+          return a.dataset.title.localeCompare(b.dataset.title);
+      } else if (criteria === 'date') {
+          return new Date(a.dataset.date) - new Date(b.dataset.date);
+      }
+  });
+
+  // Append sorted forms back to the container
+  forms.forEach(form => formsContainer.appendChild(form));
+}
