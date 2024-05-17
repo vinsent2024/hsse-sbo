@@ -535,7 +535,7 @@ footer .legal {
 }
 
 .close-button {
-  color: #aaa;
+  color: #4DC7E4;
   float: right;
   font-size: 28px;
   font-weight: bold;
@@ -543,7 +543,7 @@ footer .legal {
 
 .close-button:hover,
 .close-button:focus {
-  color: black;
+  color: #338194;
   text-decoration: none;
   cursor: pointer;
 }
@@ -1464,8 +1464,6 @@ footer .legal {
 .about-area--contents p a:hover {
   text-shadow: 10px 20px 30px black;
 }
-
-
 
 
 .btn_policy {
