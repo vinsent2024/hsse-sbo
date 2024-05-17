@@ -76,7 +76,7 @@ document.addEventListener("DOMContentLoaded", function() {
       const forms = document.querySelectorAll(".courses-card");
 
       forms.forEach(form => {
-          const title = form.dataset.title.toLowerCase();
+          const title = form.querySelector('h4').textContent.toLowerCase();
           if (title.includes(query)) {
               form.style.display = "";
           } else {
@@ -93,9 +93,7 @@ function sortForms(criteria) {
 
   forms.sort((a, b) => {
       if (criteria === 'title') {
-          return a.dataset.title.localeCompare(b.dataset.title);
-      } else if (criteria === 'date') {
-          return new Date(a.dataset.date) - new Date(b.dataset.date);
+          return a.querySelector('h4').textContent.localeCompare(b.querySelector('h4').textContent);
       }
   });
 
