@@ -1481,9 +1481,9 @@ footer .legal {
   background-size: 50.5% calc(var(--_p,0%)/2 + .5%);
   outline-offset: .1em;
   transition: background-size .4s, background-position 0s .4s;
-  border-radius: 10px;
-  height: 40px;
-  width: 120px;
+  border-radius: 5px;
+  height: 30px;
+  width: 100px;
  
 }
 .btn_policy:hover {
@@ -1499,7 +1499,7 @@ footer .legal {
 
 .btn_policy {
   color: #ffffff;
-  font-size: 1rem;
+  font-size: .8rem;
   cursor: pointer;
   padding: .1em .6em;
   border: none;
