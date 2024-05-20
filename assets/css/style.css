@@ -70,6 +70,7 @@ a {
 .btn-primary {
   background-color: #4DC7E4;
   color: #fff;
+  border: 2px solid #4DC7E4;
 }
 .btn-primary:hover {
   background-color: #338194;
