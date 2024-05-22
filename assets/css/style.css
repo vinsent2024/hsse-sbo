@@ -1891,27 +1891,25 @@ footer .legal {
   text-decoration: none;
   cursor: pointer;
 }
-
 ul {
   list-style-type: none;
   padding: 0;
 }
 
-ul li {
+ul p {
   margin: 10px 0;
 }
 
-ul li a {
+ul p a {
   text-decoration: none;
   color: #333;
 }
 
-ul li a:hover {
+
+ul p a:hover {
   text-decoration: underline;
   color: #4DC7E4;
 }
-
-
 
 
 .courses--heading h2 {
