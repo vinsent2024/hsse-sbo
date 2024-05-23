@@ -1467,6 +1467,10 @@ footer .legal {
   text-shadow: 10px 20px 30px black;
 }
 
+.policymargin
+{
+  margin-left: 25px;
+}
 
 .btn_policy {
   --c:  #ffffff; /* the color*/
