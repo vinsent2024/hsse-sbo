@@ -1899,60 +1899,6 @@ footer .legal {
   margin-top: 30px;
 }
 
-.modal2 {
-  display: none; /* Hidden by default */
-  position: fixed; /* Stay in place */
-  z-index: 1; /* Sit on top */
-  left: 0;
-  top: 0;
-  width: 100%; /* Full width */
-  height: 100%; /* Full height */
-  overflow: auto; /* Enable scroll if needed */
-  background-color: #00000086; /* Black w/ opacity */
-  margin-top: 50px;
-}
-
-.modal-content2 {
-  background-color: #fefefe;
-  margin: 15% auto; /* 15% from the top and centered */
-  padding: 20px;
-  border: 3px solid #4DC7E4;
-  border-radius: 20px;
-  width: 80%; /* Could be more or less, depending on screen size */
-}
-
-.close-btn{
-  color: #4DC7E4;
-  float: right;
-  font-size: 28px;
-  font-weight: bold;
-}
-
-.close-btn:hover,
-.close-btn:focus {
-  color: #338194;
-  text-decoration: none;
-  cursor: pointer;
-}
-ul {
-  list-style-type: none;
-  padding: 0;
-}
-
-ul p {
-  margin: 10px 0;
-}
-
-ul p a {
-  text-decoration: none;
-  color: #333;
-}
-
-
-ul p a:hover {
-  text-decoration: underline;
-  color: #4DC7E4;
-}
 
 
 .courses--heading h2 {
