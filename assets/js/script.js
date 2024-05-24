@@ -13,7 +13,7 @@ document.getElementById('dark-mode-toggle').addEventListener('click', function()
       document.body.style.backgroundColor = '#222';
       document.body.style.color = '#fff';
     } else {
-      button.innerHTML = '<i class="fas fa-moon"></i>Dark Mode';
+      button.innerHTML = '<i class="fas fa-sun"></i>Light Theme';
       // Remove dark mode styles or toggle a dark mode class on body or other elements
       document.body.style.backgroundColor = '#fff';
       document.body.style.color = '#000';
