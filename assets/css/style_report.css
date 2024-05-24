@@ -57,6 +57,7 @@ body.dark-mode {
     background: linear-gradient(#333333, var(--primary-color), #333333);
     animation: animate 5s linear infinite;
   }
+
 }
 
 body {
@@ -162,7 +163,7 @@ body {
 }
 
 section {
-  position: absolute;
+  position: relative;
   width: 100vw;
   height: 100vh;
   display: flex;
@@ -235,4 +236,31 @@ section span {
     width: calc(25vw - 2px);
     height: calc(25vw - 2px);
   }
+}
+
+/*cards*/
+
+section .signin {
+  position: absolute; /* Set to absolute */
+  top: 0; /* Align to the top */
+  left: 0; /* Align to the left */
+  width: 300px;
+  height: 100px;
+  background: #4DC7E4;  
+  z-index: 1000;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 5px 5px 10px 0px #0000000c;
+}
+
+
+section .signin .content h2 {
+  font-size: 1rem;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+
+section .signin .content h3 {
+  font-size: .8rem;
+  color: #ffffff;
 }
