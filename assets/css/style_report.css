@@ -281,8 +281,8 @@ section span {
 
 /*cards*/
 .box{
-  display: flex;
   justify-content: space-around;
+
 }
 
 section .signin {
