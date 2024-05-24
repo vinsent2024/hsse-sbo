@@ -9,14 +9,30 @@
   scroll-margin-top: 50px;
 }
 
+.color-anim {
+  transition: 500ms;
+  animation: color-change 10s infinite;
+}
+
+@keyframes color-change {
+  0% {
+    color: #5900ff;
+  }
+  50% {
+    color: #ff0095;
+  }
+  100% {
+    color: #4DC7E4;
+  }
+}
 
 .header {
   padding: 1rem 20rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border-bottom: 1px solid #ffffff;
-  box-shadow: 50px 50px 10px 0px rgba(0, 0, 0, 0.993);
+  border-bottom: 2px solid #4DC7E4;
+
 }
 @media only screen and (max-width: 576px) {
   .header {
@@ -53,26 +69,62 @@
     font-size: 1rem;
   }
 }
-.header .nav-toggler {
-  display: none;
+.btn{
+  text-align: left;
+  margin-top: 15px;
 }
-@media only screen and (max-width: 576px) {
-  .header .nav-toggler {
-    display: block;
-    font-size: 1.3rem;
+
+.fas{
+  margin-right: 5px;
+}
+
+.btn-primary-outlined {
+
+  padding: 0.8rem 1.6rem;
+  border-radius: 6px;
+  line-height: 1;
+  font-size: 0.9rem;
+  font-weight: 600;
+  border: none;
+  outline: none;
+  display: inline-block;
+  cursor: pointer;
+
+}
+.btn-primary-outlined {
+  background-color: #fff;
+  border: 2px solid #4DC7E4;
+  color: #4DC7E4;
+}
+.btn-primary-outlined:hover {
+  background-color: #4DC7E4;
+  color: #fff;
+}
+
+/* Medium screens */
+@media (max-width: 1200px) {
+  .btn-primary-outlined {
+    padding: 0.7rem 1.4rem;
+    font-size: 0.85rem;
   }
 }
-@media only screen and (min-width: 576px) {
-  .header .nav-toggler {
-    display: block;
-    font-size: 1.3rem;
+
+/* Small screens */
+@media (max-width: 768px) {
+  .btn-primary-outlined {
+    padding: 0.6rem 1.2rem;
+    font-size: 0.8rem;
   }
 }
-@media only screen and (min-width: 992px) {
-  .header .nav-toggler {
-    display: none;
+
+/* Extra small screens */
+@media (max-width: 480px) {
+  .btn-primary-outlined {
+    padding: 0.5rem 1rem;
+    font-size: 0.75rem;
   }
 }
+
 
 
 section 
@@ -122,4 +174,34 @@ section span:hover
 {
   background: #4DC7E4;
   transition: 0s;
+}
+
+/* Default size for larger screens */
+section span {
+  width: calc(6.25vw - 2px);
+  height: calc(6.25vw - 2px);
+}
+
+/* Medium screens */
+@media (max-width: 1200px) {
+  section span {
+    width: calc(8.33vw - 2px);
+    height: calc(8.33vw - 2px);
+  }
+}
+
+/* Small screens */
+@media (max-width: 768px) {
+  section span {
+    width: calc(12.5vw - 2px);
+    height: calc(12.5vw - 2px);
+  }
+}
+
+/* Extra small screens */
+@media (max-width: 480px) {
+  section span {
+    width: calc(25vw - 2px);
+    height: calc(25vw - 2px);
+  }
 }
