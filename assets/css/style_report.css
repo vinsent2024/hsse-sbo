@@ -155,6 +155,30 @@ body {
   color: var(--button-hover-text-color);
 }
 
+.two-button{
+  text-align: center;
+  margin-top: 20px;
+}
+
+.btn-analytic {
+  padding: 0.8rem 1.6rem;
+  border-radius: 6px;
+  line-height: 1;
+  font-size: 0.9rem;
+  font-weight: 600;
+  border: 2px solid var(--button-border-color);
+  background-color: var(--button-background);
+  color: var(--button-text-color);
+  outline: none;
+  display: inline-block;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.btn-analytic:hover {
+  background-color: var(--button-hover-background);
+  color: var(--button-hover-text-color);
+}
 /* Medium screens */
 @media (max-width: 1200px) {
   .btn-primary-outlined {
@@ -256,17 +280,13 @@ section span {
 }
 
 /*cards*/
-section .contain{
-  display: grid;
-  
-}
 
 section .signin {
   position: absolute; /* Set to absolute */
-  top: 0; /* Align to the top */
-  left: 0; /* Align to the left */
+  top: 50px; /* Align to the top */
+  left: 20px; /* Align to the left */
   width: 300px;
-  height: 100px;
+  height: 150px;
   background: #4DC7E4;  
   z-index: 1000;
   border-radius: 10px;
@@ -275,12 +295,15 @@ section .signin {
 
 
 section .signin .content h2 {
-  font-size: 1rem;
+  margin-top: 20px;
+  font-size: 1.5rem;
   color: #ffffff;
   text-transform: uppercase;
+  text-align: center;
 }
 
 section .signin .content h3 {
-  font-size: .8rem;
+  text-align: center;
+  font-size: 1rem;
   color: #ffffff;
 }
