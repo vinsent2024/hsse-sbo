@@ -69,8 +69,30 @@ background-color: #333333;
   p {
     color: #4DC7E4;
   }
-  
 
+  .input {
+    background-color: var(--background-color);
+    width: 300px;
+    height: 40px;
+    padding: 10px;
+    border: 2px solid #ff0095;
+    border-radius: 5px;
+    margin-bottom: 20px;
+  }
+  .input:focus {
+    color: var(--text-color);
+    background-color: var(--background-color);
+    outline-color: #ff0095;
+    box-shadow: -3px -3px 15px #ff0095;
+    transition: .1s;
+    transition-property: box-shadow;
+  }
+  @media(max-width: 600px){
+    .input{
+      width: 80%;
+    }
+  }
+  
 
 }
 
@@ -290,6 +312,43 @@ section span {
     height: calc(25vw - 2px);
   }
 }
+
+/*search*/
+.input {
+background-color: var(--background-color);
+border-radius: 5px;
+height: 40px;
+width: 300px;
+margin-bottom: 20px;
+padding: 10px;
+border: 2px solid #4DC7E4;
+outline: none;
+
+}
+
+.input:focus {
+  border: none;
+  outline: 2px solid #ff0095;
+
+
+}
+
+
+
+@media(max-width: 1600px){
+  .mobile_position{
+    text-align: center;
+  }
+}
+@media(max-width: 600px){
+  .input{
+    width: 80%;
+  }
+}
+
+
+
+
 
 /*cards*/
 .container{
