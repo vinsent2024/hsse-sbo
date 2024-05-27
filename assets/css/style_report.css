@@ -325,3 +325,8 @@ p {
   margin: 20px 0 0 0; /* Removes default margin for p elements */
 }
 
+@media (max-width: 619px) {
+  .card {
+    width: 80%; /* Adjust card width to fit the entire screen width */
+  }
+}
