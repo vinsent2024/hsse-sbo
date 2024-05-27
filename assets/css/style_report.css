@@ -77,7 +77,12 @@ background-color: #333333;
 body {
   background-color: var(--background-color);
   color: var(--text-color);
+  
 }
+
+
+
+
 
 .header {
   background-color: #ffffff;
@@ -216,11 +221,12 @@ section {
   align-items: center;
   gap: 2px;
   flex-wrap: wrap;
-  overflow: hidden;
   background-color: var(--background-color);
-  margin: 0; /* Ensure no margin issues */
+  margin:0; /* Ensure no margin issues */
   padding: 0; /* Ensure no padding issues */
   box-sizing: border-box; /* Include padding and border in the element's total width and height */
+  
+
 }
 
 section::before {
@@ -288,9 +294,10 @@ section span {
 /*cards*/
 .container{
   position: absolute;
+ top: 30px;
 }
 .box {
-  position: relative;
+      position: relative;
       width: 100%;
       display: flex;
       justify-content: center; /* Centers the cards horizontally */
