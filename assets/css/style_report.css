@@ -61,12 +61,12 @@ body.dark-mode {
 background-color: #333333;
   }
 
-  section .signin {
+  section .card {
     background: #333333;  
   }
   
   
-  section .signin .content h2 {
+  p {
     color: #4DC7E4;
   }
   
@@ -127,9 +127,6 @@ body {
     font-size: 1rem;
   }
 }
-
-
-
 
 .btn {
   text-align: left;
@@ -289,34 +286,35 @@ section span {
 }
 
 /*cards*/
-.box{
-  display: inline-block;
-
+.container{
+  position: absolute;
 }
+.box {
+  position: relative;
+      width: 100%;
+      display: flex;
+      justify-content: center; /* Centers the cards horizontally */
+      flex-wrap: wrap; /* Allows the cards to wrap to the next line if the screen is too narrow */
+      gap: 20px; /* Adds some space between the cards */
+      margin-bottom: 20px;
+    }
 
-section .signin {
-  position: absolute; /* Set to absolute */
-  top: 50px; /* Align to the top */
-  left: 20px; /* Align to the left */
+.card {
   width: 300px;
   height: 150px;
-  background: #4DC7E4;  
-
+  background: #4DC7E4;
   border-radius: 10px;
   box-shadow: 5px 5px 10px 0px #0000000c;
+  align-items: center; /* Centers content vertically */
+  justify-content: center; /* Centers content horizontally */
 }
 
-
-section .signin .content h2 {
-  margin-top: 20px;
+p {
   font-size: 1.5rem;
+  font-weight: bold;
   color: #ffffff;
   text-transform: uppercase;
   text-align: center;
+  margin: 20px 0 0 0; /* Removes default margin for p elements */
 }
 
-section .signin .content h3 {
-  text-align: center;
-  font-size: 1rem;
-  color: #ffffff;
-}
