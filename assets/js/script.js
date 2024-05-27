@@ -3,19 +3,28 @@ document.getElementById('dark-mode-toggle').addEventListener('click', function()
   });
 
   const button = document.getElementById('dark-mode-toggle');
-  let darkMode = false;
+    let darkMode = localStorage.getItem('darkMode') === 'true';
 
-  button.addEventListener('click', () => {
-    darkMode = !darkMode;
-    if (darkMode) {
-      button.innerHTML = '<i class="fas fa-moon"></i>Dark Theme';
-      // Add dark mode styles or toggle a dark mode class on body or other elements
-      document.body.style.backgroundColor = '#222';
-      document.body.style.color = '#fff';
-    } else {
-      button.innerHTML = '<i class="fas fa-sun"></i>Light Theme';
-      // Remove dark mode styles or toggle a dark mode class on body or other elements
-      document.body.style.backgroundColor = '#fff';
-      document.body.style.color = '#000';
+    function applyDarkMode(isDark) {
+      if (isDark) {
+        button.innerHTML = '<i class="fas fa-moon"></i>Dark Theme';
+        document.body.style.backgroundColor = '#222';
+        document.body.style.color = '#fff';
+      } else {
+        button.innerHTML = '<i class="fas fa-sun"></i>Light Theme';
+        document.body.style.backgroundColor = '#fff';
+        document.body.style.color = '#000';
+      }
     }
-  });
+
+    // Apply the saved dark mode preference on page load
+    applyDarkMode(darkMode);
+
+    button.addEventListener('click', () => {
+      darkMode = !darkMode;
+      localStorage.setItem('darkMode', darkMode);
+      applyDarkMode(darkMode);
+    });
+
+    // Ensure dark mode class is toggled correctly with the body class
+    document.body.classList.toggle('dark-mode', darkMode);
