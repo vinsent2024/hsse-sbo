@@ -78,6 +78,7 @@ background-color: #333333;
     border: 2px solid #ff0095;
     border-radius: 5px;
     margin-bottom: 20px;
+    color: #ffffff;
   }
   .input:focus {
     color: var(--text-color);
