@@ -1833,6 +1833,7 @@ footer .legal {
 }
 
 .search-box input[type="text"] {
+  color: #ffffff;
   background-color: transparent;
   width: 40px; /* Customize as needed */
   height: 40px; /* Customize as needed */
