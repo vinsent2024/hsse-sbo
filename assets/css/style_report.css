@@ -102,10 +102,6 @@ body {
   
 }
 
-
-
-
-
 .header {
   background-color: #ffffff;
   padding: 1rem 20rem;
@@ -340,13 +336,6 @@ outline: none;
     text-align: center;
   }
 }
-@media(max-width: 600px){
-  .input{
-    width: 80%;
-  }
-}
-
-
 
 
 
@@ -354,6 +343,12 @@ outline: none;
 .container{
   position: absolute;
  top: 30px;
+ width: 100%; /* Ensure the container takes the full width */
+
+}
+.mobile_position
+{
+  padding: 0 170px;
 }
 .box {
       position: relative;
@@ -388,7 +383,19 @@ p {
   .card {
     width: 80%; /* Adjust card width to fit the entire screen width */
   }
+
+    
+    .mobile_position
+{
+  width: 90%;
+padding: 0%;
+margin-left: 17px;
+
+
 }
+
+}
+
 @media (max-width: 900px) {
   .card {
     width: 80%; /* Adjust card width to fit the entire screen width */
