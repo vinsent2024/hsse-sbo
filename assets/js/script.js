@@ -33,17 +33,28 @@ document.getElementById('dark-mode-toggle').addEventListener('click', function()
     document.addEventListener('DOMContentLoaded', function() {
       const input = document.querySelector('.input');
       const cards = document.querySelectorAll('.card');
-  
+      const noResults = document.getElementById('no-results');
+      const userInputSpan = document.getElementById('userinput');
+
       input.addEventListener('input', function() {
-          const filter = input.value.toLowerCase();
-          cards.forEach(card => {
-              const text = card.querySelector('p').textContent.toLowerCase();
-              if (text.includes(filter)) {
-                  card.style.display = '';
-              } else {
-                  card.style.display = 'none';
-              }
-          });
+        const filter = input.value.toLowerCase();
+        let hasMatch = false;
+
+        cards.forEach(card => {
+          const text = card.querySelector('p').textContent.toLowerCase();
+          if (text.includes(filter)) {
+            card.style.display = '';
+            hasMatch = true;
+          } else {
+            card.style.display = 'none';
+          }
+        });
+
+        if (hasMatch) {
+          noResults.style.display = 'none';
+        } else {
+          noResults.style.display = 'block';
+          userInputSpan.textContent = input.value;
+        }
       });
-  });
-  
+    });
