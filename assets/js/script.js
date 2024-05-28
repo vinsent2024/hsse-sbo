@@ -28,3 +28,22 @@ document.getElementById('dark-mode-toggle').addEventListener('click', function()
 
     // Ensure dark mode class is toggled correctly with the body class
     document.body.classList.toggle('dark-mode', darkMode);
+
+    //search filter
+    document.addEventListener('DOMContentLoaded', function() {
+      const input = document.querySelector('.input');
+      const cards = document.querySelectorAll('.card');
+  
+      input.addEventListener('input', function() {
+          const filter = input.value.toLowerCase();
+          cards.forEach(card => {
+              const text = card.querySelector('p').textContent.toLowerCase();
+              if (text.includes(filter)) {
+                  card.style.display = '';
+              } else {
+                  card.style.display = 'none';
+              }
+          });
+      });
+  });
+  
