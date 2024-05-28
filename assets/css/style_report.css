@@ -389,3 +389,8 @@ p {
     width: 80%; /* Adjust card width to fit the entire screen width */
   }
 }
+@media (max-width: 900px) {
+  .card {
+    width: 80%; /* Adjust card width to fit the entire screen width */
+  }
+}
