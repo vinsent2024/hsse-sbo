@@ -154,7 +154,7 @@ a {
   .header {
     padding: 1rem 20rem;
   }
-  
+
 }
 @media only screen and (max-width: 576px) {
   .header h2 > span {
