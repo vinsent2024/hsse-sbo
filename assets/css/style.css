@@ -154,6 +154,7 @@ a {
   .header {
     padding: 1rem 20rem;
   }
+  
 }
 @media only screen and (max-width: 576px) {
   .header h2 > span {
@@ -180,13 +181,18 @@ a {
     display: none;
   }
 }
+@media (max-width: 1200px) {
+  .header .nav-toggler {
+    display: block;
+  }
+}
 .header--menu {
   display: flex;
   align-items: center;
   list-style: none;
   text-transform: uppercase;
 }
-@media only screen and (max-width: 576px) {
+@media only screen and (max-width: 1200px) {
   .header--menu {
     display: none;
     position: fixed;
@@ -274,6 +280,14 @@ a {
   box-shadow: 1px 1px 2px 0 #e6e6e6;
   z-index: 999;
 }
+
+@media (max-width: 1700px) {
+  .header--menu li a {
+    font-size: 10px;
+  
+  }
+}
+
 
 @media only screen and (max-width: 576px) {
   .background-shapes {
