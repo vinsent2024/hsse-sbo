@@ -21,6 +21,7 @@ self.addEventListener('activate', event => {
         cacheNames.filter(cache => cache !== cacheName).map(cache => caches.delete(cache))
       );
     })
+    .then(() => self.skipWaiting()) // Activate new service worker immediately
   );
 });
 
@@ -38,4 +39,3 @@ self.addEventListener('message', event => {
     self.skipWaiting();
   }
 });
-
