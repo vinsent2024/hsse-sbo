@@ -1212,7 +1212,7 @@ footer .legal {
 }
 
 .space-y-2 > * {
-  margin-bottom: 2rem;
+  margin-bottom: 0rem;
 }
 
 .space-x-3 > * {
@@ -1962,8 +1962,6 @@ footer .legal {
 .courses-cards {
   display: flex;
   justify-content: space-around;
-  padding-bottom: 0rem;
-  padding-top: .5rem;
 }
 @media only screen and (max-width: 576px) {
   .courses-cards {
