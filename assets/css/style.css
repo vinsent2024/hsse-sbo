@@ -1962,8 +1962,6 @@ footer .legal {
 .courses-cards {
   display: flex;
   justify-content: space-around;
-  margin-bottom: 0rem;
-  margin-top: 2rem;
 }
 @media only screen and (max-width: 576px) {
   .courses-cards {
@@ -1987,6 +1985,7 @@ footer .legal {
   max-width: 380px;
   border-radius: 10px;
   overflow: hidden;
+  margin-bottom: 2rem;
 
 }
 @media only screen and (min-width: 992px) {
