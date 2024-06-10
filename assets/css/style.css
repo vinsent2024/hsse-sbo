@@ -1962,7 +1962,8 @@ footer .legal {
 .courses-cards {
   display: flex;
   justify-content: space-around;
-  margin-bottom: 20rem;
+  margin-bottom: 0rem;
+  margin-top: 0rem;
 }
 @media only screen and (max-width: 576px) {
   .courses-cards {
