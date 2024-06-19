@@ -404,7 +404,7 @@ margin-left: 17px;
   }
 }
 
-@media (min-width: 1260px) and (max-width: 1450px){
+@media (min-width: 1260px) and (max-width: 1579px){
   .card {
   width: 200px;
   height: 110px; /* Adjust card width to fit the entire screen width */
