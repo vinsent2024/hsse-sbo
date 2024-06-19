@@ -416,7 +416,7 @@ margin-left: 17px;
     font-size: .4rem;
     width: 6rem;
     height: 1rem;
-    display: inline-block;
+    text-allign: center;
     
   }
 }
