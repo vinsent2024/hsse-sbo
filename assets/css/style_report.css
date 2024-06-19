@@ -406,7 +406,8 @@ margin-left: 17px;
 
 @media (max-width: 1259px) {
   .card {
-    width: 80%; /* Adjust card width to fit the entire screen width */
+  width: 150px;
+  height: 75px; /* Adjust card width to fit the entire screen width */
   }
 }
 
