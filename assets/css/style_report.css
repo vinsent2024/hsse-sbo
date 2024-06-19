@@ -414,6 +414,8 @@ margin-left: 17px;
   }
   .btn-analytic{
     font-size: .5rem;
+    width: 5rem;
+    height: 1rem;
     
   }
 }
