@@ -417,10 +417,10 @@ margin-left: 17px;
     width: 6rem;
     height: 1rem;
   }
-  fas fa-file{
+  .fas fa-file{
     display:none;
   }
-  fas fa-table{
+  .fas fa-table{
     display:none;
   }
 }
