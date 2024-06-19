@@ -407,14 +407,14 @@ margin-left: 17px;
 @media (min-width: 1260px) and (max-width: 1579px){
   .card {
   width: 200px;
-  height: 110px; /* Adjust card width to fit the entire screen width */
+  height: 120px; /* Adjust card width to fit the entire screen width */
   }
   p{
     font-size: 1rem;
   }
   .btn-analytic{
     font-size: .6rem;
-    width: 6rem;
+    width: 5rem;
     height: 3rem
   }
 }
