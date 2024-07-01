@@ -75,7 +75,7 @@ self.addEventListener('fetch', event => {
         <body>
           <div class="container">
             <h1>Offline</h1>
-            <img src="./assets/img/offline.svg" alt="vv">
+            <img src="./assets/img/offline.svg">
             <p>You are currently offline. Please check your internet connection.</p>
             <button onclick="exitApp()">Exit App</button>
           </div>
