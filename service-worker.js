@@ -50,7 +50,7 @@ self.addEventListener('fetch', event => {
               align-items: center;
               height: 100vh;
               margin: 0;
-              font-family: Arial, sans-serif;
+              font-family: "Roboto Mono", sans-serif;
               background-color: #f8f9fa;
               color: #333;
             }
@@ -61,10 +61,10 @@ self.addEventListener('fetch', event => {
               margin-top: 20px;
               padding: 10px 20px;
               font-size: 16px;
-              background-color: #007bff;
+              background-color: #4DC7E4;
               color: white;
               border: none;
-              border-radius: 4px;
+              border-radius: 6px;
               cursor: pointer;
             }
             button:hover {
