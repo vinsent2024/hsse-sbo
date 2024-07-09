@@ -2097,6 +2097,9 @@ footer .legal {
   .courses-card--body p {
     font-size: 1rem;
   }
+  .courses-card--body h4 {
+    font-size: 1.8rem;
+  }
 }
 .courses-card a {
   color: rgba(0, 0, 0, 0.938);
