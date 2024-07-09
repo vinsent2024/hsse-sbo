@@ -404,7 +404,23 @@ margin-left: 17px;
   }
 }
 
-@media (min-width: 1260px) and (max-width: 1579px){
+
+@media (min-width: 901px) and (max-width: 1079px){
+  .card {
+  width: 160px;
+  height: 170px; /* Adjust card width to fit the entire screen width */
+  }
+  p{
+    font-size: 1rem;
+  }
+  .btn-analytic{
+    font-size: .6rem;
+    width: 6rem;
+    height: 3rem
+  }
+}
+
+@media (min-width: 1080px) and (max-width: 1579px){
   .card {
   width: 200px;
   height: 120px; /* Adjust card width to fit the entire screen width */
