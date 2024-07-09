@@ -1978,7 +1978,7 @@ footer .legal {
     font-size: 0.9rem;
   }
 }
-@media only screen and (min-width: 1400px) {
+@media only screen and (min-width: 1450px) {
   .courses--heading p {
     font-size: 1rem;
   }
@@ -1998,7 +1998,7 @@ footer .legal {
     align-items: center;
   }
 }
-@media only screen and (min-width: 992px) {
+@media only screen and (min-width: 1000px) {
   .courses-cards {
     flex-direction: row;
     align-items: center;
@@ -2012,10 +2012,17 @@ footer .legal {
   margin-bottom: 2rem;
 
 }
-@media only screen and (min-width: 992px) {
+@media only screen and (min-width: 1000px) {
   .courses-card {
-    max-width: 280px;
+    max-width: 210px;
   }
+  
+}
+@media only screen and (min-width: 1140px) {
+  .courses-card {
+    max-width: 250px;
+  }
+  
 }
 @media only screen and (min-width: 1700px) {
   .courses-card {
@@ -2056,7 +2063,7 @@ footer .legal {
     font-size: 1rem;
   }
 }
-@media only screen and (min-width: 1400px) {
+@media only screen and (min-width: 1450px) {
   .courses-card--body h4 {
     font-size: 1.5rem;
   }
@@ -2075,14 +2082,14 @@ footer .legal {
     font-size: 0.9rem;
   }
 }
-@media only screen and (min-width: 992px) {
+@media only screen and (min-width: 1000px) {
   .courses-card--body p {
-    font-size: 0.8rem;
+    font-size: 0.6rem;
   }
 }
-@media only screen and (min-width: 1400px) {
+@media only screen and (min-width: 1450px) {
   .courses-card--body p {
-    font-size: 1rem;
+    font-size: .8rem;
   }
 }
 .courses-card a {
