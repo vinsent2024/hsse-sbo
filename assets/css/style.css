@@ -1241,6 +1241,14 @@ footer .legal {
 
 
 
+.hero-area::before
+{
+  background-image: url(/assets/img/maersk.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+filter: blur(5rem);
+}
 
 
 .hero-area {
@@ -1249,11 +1257,9 @@ footer .legal {
   justify-content: space-around;
   align-items: center;
   position: relative;
-  background-image: url(/assets/img/maersk.jpg);
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
+  z-index: 1;
 }
+
 @media only screen and (max-width: 576px) {
   .hero-area {
     padding: 4rem 2rem;
