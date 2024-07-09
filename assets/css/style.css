@@ -1248,7 +1248,11 @@ footer .legal {
   display: flex;
   justify-content: space-around;
   align-items: center;
-
+  position: relative;
+  background-image: url(/assets/img/maersk.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 @media only screen and (max-width: 576px) {
   .hero-area {
