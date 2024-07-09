@@ -1365,9 +1365,9 @@ footer .legal {
 }
 .hero-area--desc {
   margin-top: 2rem;
-  font-size: 1.2rem;
+  font-size: 1rem;
   line-height: 1.8;
-  color: #4DC7E4;
+  color: #ffffff;
 }
 @media only screen and (max-width: 576px) {
   .hero-area--desc {
