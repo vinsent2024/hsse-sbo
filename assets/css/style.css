@@ -2092,6 +2092,11 @@ footer .legal {
     font-size: .8rem;
   }
 }
+@media only screen and (min-width: 1700px) {
+  .courses-card--body p {
+    font-size: 1rem;
+  }
+}
 .courses-card a {
   color: rgba(0, 0, 0, 0.938);
 }
