@@ -1239,6 +1239,12 @@ footer .legal {
   margin-bottom: 5rem;
 }
 
+.hero-area{
+  background-image: url("/assets/img/maersk.jpg");
+}
+
+
+
 .hero-area {
   padding: 8rem 20rem;
   display: flex;
