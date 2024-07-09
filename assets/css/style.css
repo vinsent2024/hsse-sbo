@@ -1260,7 +1260,7 @@ footer .legal {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  filter: blur(8px); /* Adjust the blur amount as needed */
+  filter: blur(5px); /* Adjust the blur amount as needed */
   z-index: -1; /* Ensure it’s behind the content */
 }
 
