@@ -232,7 +232,7 @@ a {
     width: 200px;
     height: 300px;
     background-color: #0086c4;
-    z-index: 1;
+    z-index: 10;
     transition: 500ms;
     border-radius: 10px;
   }
