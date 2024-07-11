@@ -1267,7 +1267,7 @@ footer .legal {
 
 .hero-area > * {
   position: relative; /* Ensure child elements are above the pseudo-element */
-  z-index: 1;
+
 }
 
 
