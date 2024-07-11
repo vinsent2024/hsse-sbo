@@ -74,6 +74,7 @@ a {
 }
 .btn-primary:hover {
   background-color: #338194;
+  border: 2px solid #338194;
 }
 .btn-primary-outlined {
   background-color: #ffffff00;
