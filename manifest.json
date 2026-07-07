@@ -1,7 +1,7 @@
 {
     "name": "Safety Behavioral Observation",
     "short_name": "SBO",
-    "start_url": ".",
+    "start_url": "service-worker.js",
     "display": "standalone",
     "background_color": "#ffffff",
     "theme_color": "#4DC7E4",
